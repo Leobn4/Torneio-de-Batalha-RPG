@@ -1,0 +1,14 @@
+C:\Users\aluno_iot\Desktop\dasdsadasdas\bin\Debug\net8.0\dasdsadasdas.exe
+C:\Users\aluno_iot\Desktop\dasdsadasdas\bin\Debug\net8.0\dasdsadasdas.deps.json
+C:\Users\aluno_iot\Desktop\dasdsadasdas\bin\Debug\net8.0\dasdsadasdas.runtimeconfig.json
+C:\Users\aluno_iot\Desktop\dasdsadasdas\bin\Debug\net8.0\dasdsadasdas.dll
+C:\Users\aluno_iot\Desktop\dasdsadasdas\bin\Debug\net8.0\dasdsadasdas.pdb
+C:\Users\aluno_iot\Desktop\dasdsadasdas\obj\Debug\net8.0\dasdsadasdas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aluno_iot\Desktop\dasdsadasdas\obj\Debug\net8.0\dasdsadasdas.AssemblyInfoInputs.cache
+C:\Users\aluno_iot\Desktop\dasdsadasdas\obj\Debug\net8.0\dasdsadasdas.AssemblyInfo.cs
+C:\Users\aluno_iot\Desktop\dasdsadasdas\obj\Debug\net8.0\dasdsadasdas.csproj.CoreCompileInputs.cache
+C:\Users\aluno_iot\Desktop\dasdsadasdas\obj\Debug\net8.0\dasdsadasdas.dll
+C:\Users\aluno_iot\Desktop\dasdsadasdas\obj\Debug\net8.0\refint\dasdsadasdas.dll
+C:\Users\aluno_iot\Desktop\dasdsadasdas\obj\Debug\net8.0\dasdsadasdas.pdb
+C:\Users\aluno_iot\Desktop\dasdsadasdas\obj\Debug\net8.0\dasdsadasdas.genruntimeconfig.cache
+C:\Users\aluno_iot\Desktop\dasdsadasdas\obj\Debug\net8.0\ref\dasdsadasdas.dll
