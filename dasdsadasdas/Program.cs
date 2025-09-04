@@ -82,43 +82,74 @@ public override void Defesa(Arqueiro)
 
 public class Mago : Criatura
 {
-    public int mana; // Atributo de mana do mago
-    public int custoMana; // Custo de mana por ataque mágico
+    public int mana; 
+    public int custoMana;
 
-    // Construtor
+
     public Mago(string nome, int vida, int ataque, int defesa, int mana, int custoMana)
     {
-        this.nome = nome;
-        this.vida = vida;
-        this.ataque = ataque;
-        this.defesa = defesa;
-        this.mana = mana;
-        this.custoMana = custoMana;
+        nome = nome;
+        vida = vida;
+        ataque = ataque;
+        defesa = defesa;
+        mana = mana;
+        custoMana = custoMana;
     }
 
-    // Implementação do ataque mágico
+
     public override void Atacar(Criatura alvo)
     {
-        if (mana >= custoMana) // Verifica se o mago tem mana suficiente
+        if (mana >= custoMana) 
         {
-            // Ataque mágico: ignora a defesa do alvo
-            int danoMagico = this.ataque; // Ignora a defesa do alvo
+            
+            int danoMagico = ataque; 
             Console.WriteLine($"{nome} usou ataque mágico em {alvo.nome}!");
 
 
-            // O alvo recebe o dano
+            
             alvo.ReceberDano(danoMagico);
 
-            // Deduz o custo de mana após o ataque
+        
             mana -= custoMana;
             Console.WriteLine($"{nome} gastou {custoMana} de mana. Mana restante: {mana}");
         }
         else
         {
-            // Se não tiver mana suficiente, o mago não ataca
+    
             Console.WriteLine($"{nome} não tem mana suficiente para atacar!");
         }
     }
+    public class Batalha
+{
+    private Criatura criaturaA;
+    private Criatura criaturaB;
+
+    public Batalha(Criatura a, Criatura b)
+    {
+        criaturaA = a;
+        criaturaB = b;
+    }
+
+    public Criatura Executar()
+    {
+        Console.WriteLine($"\n Iniciando batalha entre {criaturaA.nome} e {criaturaB.nome}");
+
+        while (criaturaA.EstaVivo() && criaturaB.EstaVivo())
+        {
+            Console.WriteLine($"\n{criaturaA.nome} ataca {criaturaB.nome}");
+            criaturaA.Atacar(criaturaB);
+            if (!criaturaB.EstaVivo()) break;
+
+            Console.WriteLine($"{criaturaB.nome} ataca {criaturaA.nome}");
+            criaturaB.Atacar(criaturaA);
+        }
+
+        Criatura vencedor = criaturaA.EstaVivo() ? criaturaA : criaturaB;
+        Console.WriteLine($"\n Vencedor da batalha: {vencedor.nome}");
+        return vencedor;
+    }
+}
+
 
     public class Torneio
 {
@@ -129,7 +160,7 @@ public class Mago : Criatura
         if (criaturas.Count < 2)
             throw new ArgumentException("É necessário pelo menos 2 criaturas para iniciar o torneio.");
 
-        this.criaturas = criaturas;
+        criaturas = criaturas;
     }
 
     public void Iniciar()
@@ -193,3 +224,4 @@ public class Program
 
 
     
+
